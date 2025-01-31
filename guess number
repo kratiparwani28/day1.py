@@ -1,0 +1,17 @@
+import random
+n = random.randint (1,100)
+print("Welcome to the Number Guessing Game!")
+print("I have generated a n number between 1 and 100. Can you guess it?")
+while True:
+     userChoice = int(input("guess the target :" ))
+     if(userChoice == n):
+          print("sucess! correct guess")
+          break
+     elif(userChoice < n):
+          print("Too low! Try again.")
+     else:
+          print("Too high! Try again.")          
+print("-----Game Stop------")
+print(f"Congratulations! You guessed the number {n} ")
+          
+      
