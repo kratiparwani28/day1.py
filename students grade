@@ -1,0 +1,12 @@
+marks = int(input("marks:"))
+if (marks >= 90) :
+    print ("A")
+elif (marks >= 80 or marks < 90) : 
+    print ("B")
+elif (marks >= 70 or marks < 70) :
+    print ("C")
+elif  (marks >= 60 or 
+      marks <=20) :
+    print ("D")
+else :
+    print ("you are fail")
