@@ -1,0 +1,25 @@
+todo_list = []
+while True:
+    print("\nTo-Do List Menu:")
+    print("1. View to-do list")
+    print("2. Add a to-do")
+    print("3. Exit")
+    choice = input("Enter your choice: ")
+    if choice == "1":
+        if not todo_list:
+            print("Your to-do list is empty.")
+        else:
+            print("Your to-do list:")
+            for i, todo in enumerate(todo_list, start=1):
+                print(f"{i}. {todo}")
+    elif choice == "2":
+        todo = input("Enter a new to-do: ")
+        todo_list.append(todo)
+        print(f'"{todo}" ')
+        print("added work!")
+    elif choice == "3":
+        print("Exiting the to-do list application. Goodbye!")
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
+
+
