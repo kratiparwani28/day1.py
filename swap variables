@@ -1,0 +1,7 @@
+a = input("enter a number")
+b = input("enter b number")
+print(f"orignal value of a : {a}, b : {b} before")
+temp = a
+a = b
+b = temp
+print(f"swapped value of a : {a}, b : {b} after ")
