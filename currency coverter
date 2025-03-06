@@ -1,0 +1,5 @@
+def contverter(USD_val) :
+    INR_val = USD_val*83
+    print(USD_val,"USD=",INR_val,"INR=")
+contverter(73) 
+
